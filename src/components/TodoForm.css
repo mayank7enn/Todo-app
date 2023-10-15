@@ -1,0 +1,89 @@
+
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+    background-color: var(--body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 80rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--card);
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputs input{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 15rem;
+    height: 2.6rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.183);
+    border: 2px solid var(--primary);
+    margin: 0 1.2rem 0 1.2rem;
+    color: aliceblue;
+}
+.inputs input::placeholder{
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: aliceblue;
+    font-weight: 600;
+}
+.btn button{
+    width: 5rem;
+    height: 3rem;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 25px;
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin-left: 5rem;
+    font-weight: 500;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+h1 span{
+    color: var(--primary);
+}
+
+@media (max-width: 865px) {
+    .form{
+        padding: 2rem;
+    }
+    .inputs input{
+        width: 12.5rem;
+        margin: 0 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .form{
+        flex-direction: column;
+    }
+    .inputs{
+        flex-direction: column;
+    }
+    .inputs input{
+        width: 75vw;
+        margin: 0.5rem 0rem;
+    }
+    .btn button{
+        width: 75vw;
+        margin: 1.2rem 0;
+    }
+}
